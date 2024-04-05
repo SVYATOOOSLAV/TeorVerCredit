@@ -2,7 +2,7 @@ package model
 
 data class Credit(
     val creditExist: Boolean,
-    val creditCount: Int,
+    val creditSum: Double,
     val debtCreditExist: Boolean,
     val debtCreditCost: Double
-    ) {}
+) {}
