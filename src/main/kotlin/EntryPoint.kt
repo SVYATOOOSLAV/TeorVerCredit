@@ -68,7 +68,6 @@ class EntryPoint {
         print("Есть ли кредитная карта банка? (y/n): ")
         val creditCardExist = scanner.nextLine() == "y"
         var debtCreditCardExist = false
-        var debtCreditCardCost = 0.0
         if (creditCardExist) {
             print("Есть ли задолженность по кредитной карте? (y/n): ")
             debtCreditCardExist = scanner.nextLine() == "y"
