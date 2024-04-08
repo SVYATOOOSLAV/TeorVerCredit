@@ -85,7 +85,7 @@ class Calculator(var client: Client) {
             return baseRateForZeroLosses
         }
         println("\nСреднее значение потерь при выдаче кредита банком: $losses")
-        val rate: Double = (losses / (desiredCredit * (1-default))) * 100 // ставка
-        return if(rate > baseRate) rate else (baseRate + rate)/2
+        val rate: Double = (default /  (1-default)) * 100 // ставка
+        return if(rate < baseRate) baseRate else (baseRate + rate)/2
     }
 }

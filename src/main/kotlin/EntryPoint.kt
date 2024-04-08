@@ -29,11 +29,11 @@ class EntryPoint {
         var debtCreditCost = 0.0
 
         if (creditExist) {
-            print("Введите стоимость кредита: ")
-            creditSum = scanner.nextLine().toDouble()
             print("Есть ли задолженность по кредиту / кредитам? (y/n): ")
             debtCreditExist = scanner.nextLine() == "y"
             if (debtCreditExist) {
+                print("Введите стоимость кредита: ")
+                creditSum = scanner.nextLine().toDouble()
                 print("На какую сумму долг по кредиту / кредитам у заемщика (полная стоимость в руб): ")
                 debtCreditCost = scanner.nextLine().toDouble()
             }
